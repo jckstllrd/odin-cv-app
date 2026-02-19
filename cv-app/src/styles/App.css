@@ -1,0 +1,27 @@
+html,
+body {
+  min-height: 100vh;
+  margin: 0;
+}
+
+.app-container {
+  display: grid;
+  min-height: 100vh;
+  grid-template-columns: 1fr 1fr;
+}
+
+/* div {
+  height: 100vh;
+  width: 50vw;
+} */
+
+.form-container { 
+    background-color: whitesmoke;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+}
+div { 
+  border: 1px solid red;
+}
