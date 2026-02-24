@@ -1,0 +1,35 @@
+:root {
+  display: inline-block;
+}
+
+html,
+body {
+  margin: 0;
+  height: 100vh;
+}
+
+#root {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.app-container {
+  height: 95vh;
+  width: 95vw;
+  background-color: antiquewhite;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.form-container {
+  background-color: lightblue;
+  /* grid-area: form; */
+}
+
+.cv-container {
+  background-color: white;
+  /* grid-area: cv; */
+}
