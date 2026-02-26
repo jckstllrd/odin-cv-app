@@ -18,11 +18,6 @@ export default function CV(props) {
               <div className="experience-container">experience</div>
             </li>;
           })}
-          <li>
-            <div className="experience-container">
-              <h5>Company Name</h5>
-            </div>
-          </li>
         </ul>
       </div>
       <div className="education">
