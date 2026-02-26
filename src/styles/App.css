@@ -31,5 +31,7 @@ body {
 
 .cv-container {
   background-color: white;
+  display: flex;
+  height: 100%;
   /* grid-area: cv; */
 }

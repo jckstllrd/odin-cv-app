@@ -22,7 +22,6 @@ export default function App() {
           <EducationForm />
         </div>
         <div className="cv-container">
-          <h2>CV</h2>
           <CV name={name} />
         </div>
       </div>

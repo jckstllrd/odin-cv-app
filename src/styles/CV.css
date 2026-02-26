@@ -1,0 +1,25 @@
+.cv {
+  flex: 1;
+  display: grid;
+  margin: 1rem;
+  border: 1px solid black;
+  grid-template-rows: 1fr 3fr 3fr;
+}
+
+.cv > * {
+  border: 1px solid black;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.personal-details {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    align-items: center;
+}
