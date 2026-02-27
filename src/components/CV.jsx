@@ -13,16 +13,22 @@ export default function CV(props) {
       <div className="experience">
         <h4>Experience:</h4>
         <ul className="experience-list">
-          {props.experienceList.map((experienceItem) => (
-            <li key={experienceItem.id}>
-              <div className="experience-container">
-                <p>{experienceItem.experience.school}</p>
-                <p>{experienceItem.experience.degree}</p>
-                <p>{experienceItem.experience.startDate}</p>
-                <p>{experienceItem.experience.endDate}</p>
-              </div>
-            </li>
-          ))}
+          {props.experiences.map((experienceItem) => {
+            if (experienceItem) {
+              return (
+                <li key={experienceItem.id}>
+                  <div className="experience-container">
+                    <p>{experienceItem.experience.school}</p>
+                    <p>{experienceItem.experience.degree}</p>
+                    <p>{experienceItem.experience.startDate}</p>
+                    <p>{experienceItem.experience.endDate}</p>
+                  </div>
+                </li>
+              );
+            } else {
+              return;
+            }
+          })}
         </ul>
       </div>
       <div className="education">

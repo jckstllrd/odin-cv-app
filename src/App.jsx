@@ -10,9 +10,8 @@ export default function App() {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [tel, setTel] = useState("");
-  const [experienceList, setExperienceList] = useState([]);
+  const [experiences, setExperiences] = useState([]);
   const [educationList, setEducationList] = useState([]);
-
   return (
     <>
       <div className="app-container">
@@ -27,8 +26,8 @@ export default function App() {
             setTel={setTel}
           />
           <ExperienceForm
-            experienceList={experienceList}
-            setExperienceList={setExperienceList}
+            experiences={experiences}
+            setExperiences={setExperiences}
           />
           <EducationForm
             educationList={educationList}
@@ -40,7 +39,7 @@ export default function App() {
             name={name}
             email={email}
             tel={tel}
-            experienceList={experienceList}
+            experiences={experiences}
             educationList={educationList}
           />
         </div>
